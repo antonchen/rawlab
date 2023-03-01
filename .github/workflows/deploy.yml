@@ -38,4 +38,4 @@ jobs:
 
       - name: Deploy
         run: |
-          rsync -av --delete --rsh=ssh ./public/* ${{ secrets.DEPLOY_HOST }}:/storage/data/wwwroot/rawlab/
+          rsync -av --delete --rsh=ssh ./public/ ${{ secrets.DEPLOY_HOST }}:/storage/data/wwwroot/rawlab/

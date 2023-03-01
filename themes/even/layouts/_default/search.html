@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section>
+<div class="content-wrapper">
 	<div id="search">
 		<form action="{{ "search" | absURL }}">
 			<input class="search-query" name="s" placeholder="搜索" />
@@ -7,7 +7,7 @@
 		<div id="search-results">
 		</div>
 	</div>
-</section>
+</div>
 <script id="search-result-template" type="text/x-js-template">
 	  <div id="summary-${key}" class="search_list">
 		<h2 class="post-title"><a href="${link}">${title}</a></h2>
@@ -15,5 +15,5 @@
 			<p>${snippet}</p>
 		</div>
 	  </div>
-	</script>
+</script>
 {{ end }}

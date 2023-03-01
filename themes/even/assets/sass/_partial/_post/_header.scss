@@ -22,14 +22,9 @@
 
     .post-category {
       display: inline;
-
+      content: '·';
       a {
         color: inherit;
-
-        &::before {
-          content: '·';
-        }
-
         &:hover {
           color: $theme-color;
         }
@@ -39,6 +34,7 @@
     .more-meta {
       &::before {
         content: '·';
+        padding: 0 5px 0 3px;
       }
     }
 

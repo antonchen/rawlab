@@ -23,6 +23,10 @@ jobs:
           hugo-version: "0.110.0"
           extended: true
 
+      - uses: szenius/set-timezone@v1.1
+        with:
+          timezoneLinux: "Asia/Singapore"
+
       - name: Build
         run: hugo --minify
 

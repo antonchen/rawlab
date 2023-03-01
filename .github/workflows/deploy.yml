@@ -1,0 +1,41 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: false
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.110.0"
+          extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - uses: webfactory/ssh-agent@v0.7.0
+        with:
+          ssh-private-key: |
+            ${{ secrets.DEPLOY_KEY }}
+
+      - name: Save hostkey
+        run: |
+          curl -s -I ${{ secrets.DEPLOY_API }}
+          ssh -T -o StrictHostKeyChecking=accept-new ${{ secrets.DEPLOY_HOST }} > /dev/null 2>&1
+
+      - name: Deploy
+        run: |
+          rsync -av --delete --rsh=ssh ./public/* ${{ secrets.DEPLOY_HOST }}:/storage/data/wwwroot/rawlab/

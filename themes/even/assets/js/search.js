@@ -102,6 +102,4 @@ function render(templateString, data) {
   return templateString;
 }
 
-$(function () {
-  $(".search-query").focus();
-})
+$(".search-query").focus();

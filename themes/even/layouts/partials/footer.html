@@ -15,16 +15,16 @@
 
 <div class="copyright">
   <span class="power-by">
-    {{ (printf (T "powered") `<a class="hexo-link" href="https://gohugo.io">Hugo</a>`) | safeHTML }}
+    {{ (printf (T "powered") `<a class="hexo-link" href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>`) | safeHTML }}
   </span>
   <span class="division">|</span>
   <span class="theme-info">
     {{ T "theme" }} -
-    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even" target="_blank" rel="noopener">Even</a>
   </span>
   {{- if .Site.Params.beianMiit -}}
   <span class="beian-miit">
-    <a class="hexo-link" href="https://beian.miit.gov.cn/" target="_blank">{{ .Site.Params.beianMiit }}</a>
+    <a class="hexo-link" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">{{ .Site.Params.beianMiit }}</a>
   </span>
   {{ end }}
   <span class="copyright-year">

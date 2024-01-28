@@ -1,7 +1,7 @@
 baseURL = "https://blog.rawlab.net/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"     # en / zh-cn / ... (This field determines which i18n file to use)
-title = "源数据"
+title = "玄源"
 preserveTaxonomyNames = true
 enableRobotsTXT = true
 enableEmoji = true
@@ -18,8 +18,8 @@ hasCJKLanguage = true # has chinese/japanese/korean ? # 自动检测是否包含
 paginate = 5          # 首页每页显示的文章数
 copyright = ""        # default: author.name ↓        # 默认为下面配置的author.name ↓
 
-[author] # essential                     # 必需
-name = "Anton Chen"
+[params.author] # essential                     # 必需
+name = "Anton"
 
 [permalinks]
 post = "/:year/:month/:slugorfilename"
@@ -162,7 +162,7 @@ home = ["HTML", "RSS", "JSON"]
 page = ["HTML"]
 section = ["HTML"]
 taxonomy = ["HTML"]
-taxonomyTerm = ["HTML"]
+# taxonomyTerm = ["HTML"]
 
 # 将下面这段配置取消注释可以使 hugo 生成 .md 文件
 # Uncomment these options to make hugo output .md files.

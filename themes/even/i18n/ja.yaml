@@ -15,15 +15,6 @@ powered:
 theme:
   other: "Theme"
 
-siteUV:
-  other: "総訪問者数: %s"
-
-sitePV:
-  other: "総ページビュー: %s"
-
-pagePV:
-  other: "ページビュー: %s"
-
 # ===== post =====
 prevPage:
   other: "前へ"

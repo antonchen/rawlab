@@ -15,15 +15,6 @@ powered:
 theme:
   other: "主题"
 
-siteUV:
-  other: "本站总访客数 %s 人"
-
-sitePV:
-  other: "本站总访问量 %s 次"
-
-pagePV:
-  other: "%s 次阅读"
-
 # ===== post =====
 prevPage:
   other: "上一页"

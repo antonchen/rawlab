@@ -15,15 +15,6 @@ powered:
 theme:
   other: "Tema"
 
-siteUV:
-  other: "site uv: %s"
-
-sitePV:
-  other: "site pv: %s"
-
-pagePV:
-  other: "okuma süresi: %s"
-
 # ===== post =====
 prevPage:
   other: "Önceki"

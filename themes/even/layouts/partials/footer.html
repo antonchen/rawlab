@@ -5,12 +5,7 @@
   <a href="{{ $path | safeURL }}" class="iconfont icon-{{ $realName }}" title="{{ $realName }}"></a>
   {{- end }}
   {{- end }}
-  {{ if .Site.LanguagePrefix -}}
-  <a href="{{ .Site.LanguagePrefix | absURL }}/index.xml" type="application/rss+xml" class="iconfont icon-rss"
-    title="rss"></a>
-  {{- else -}}
-  <a href="{{ .Site.RSSLink }}" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
-  {{- end }}
+  <a href="{{ "/index.xml" | relLangURL }}" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
 <div class="copyright">
@@ -35,7 +30,7 @@
     {{ end }}
     {{- $current -}}
     <span class="heart"><i class="iconfont icon-heart"></i></span><!--
-    --><span>{{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end
+    --><span>{{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}{{ else }}{{ .Site.Params.Author.name | safeHTML }}{{ end
       }}</span>
   </span>
 </div>

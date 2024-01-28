@@ -15,15 +15,6 @@ powered:
 theme:
   other: "Theme"
 
-siteUV:
-  other: "site uv: %s"
-
-sitePV:
-  other: "site pv: %s"
-
-pagePV:
-  other: "%s times read"
-
 # ===== post =====
 prevPage:
   other: "Prev"

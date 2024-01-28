@@ -15,15 +15,6 @@ powered:
 theme:
   other: "Thème"
 
-siteUV:
-  other: "site uv: %s"
-
-sitePV:
-  other: "site pv: %s"
-
-pagePV:
-  other: "%s temps de lecture"
-
 # ===== post =====
 prevPage:
   other: "Plus récents"

@@ -2,6 +2,7 @@ code, pre {
   padding: 7px;
   font-size: $code-font-size;
   font-family: $code-font-family;
+  font-weight: 500;
   background: $code-background;
 }
 
@@ -21,9 +22,9 @@ pre > code {
   z-index: 2;
   font-size: .8em !important;
   padding: 0px 0.5rem !important;
-  color: #b1b1b1;
-  font-family: Arial;
-  font-weight: 600;
+  color: #969696;
+  font-family: $code-font-family;
+  font-weight: bold;
   cursor: pointer;
   user-select: none;
   background-color: #fefefe;

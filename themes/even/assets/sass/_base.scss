@@ -131,7 +131,7 @@ $size in $global-headings {
     .post-title a {
       text-decoration-line: initial;
       color: $theme-color;
-      font-weight: 400;
+      font-weight: normal;
       font-size: 20px;
       &:hover {
         border-bottom: $post-readMore-border-bottom;

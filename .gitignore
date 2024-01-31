@@ -2,6 +2,7 @@ local_config.toml
 # Generated files by hugo
 /public/
 /resources/_gen/
+/themes/even/resources/_gen/
 /assets/jsconfig.json
 hugo_stats.json
 

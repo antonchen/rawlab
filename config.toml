@@ -19,10 +19,10 @@ paginate = 5          # 首页每页显示的文章数
 copyright = ""        # default: author.name ↓        # 默认为下面配置的author.name ↓
 
 [params.author] # essential                     # 必需
-name = "Anton"
+name = "Anton Chen"
 
 [permalinks]
-post = "/:year/:month/:slugorfilename"
+post = "/:year/:month/:slugorcontentbasename"
 
 [frontmatter]
 lastmod = [":git", ":fileModTime", "lastmod", "date", "publishDate"]

@@ -22,15 +22,7 @@
     <a class="hexo-link" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">{{ .Site.Params.beianMiit }}</a>
   </span>
   {{ end }}
-  <span class="copyright-year">
-    {{- $current := now.Format "2006" }}
-    &copy;
-    {{ if ne .Site.Params.since $current -}}
-    {{ .Site.Params.since }} -
-    {{ end }}
-    {{- $current -}}
-    <span class="heart"><i class="iconfont icon-heart"></i></span><!--
-    --><span>{{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}{{ else }}{{ .Site.Params.Author.name | safeHTML }}{{ end
-      }}</span>
+  <span class="copyright-year">{{- $current := now.Format "2006" }}&copy;{{ if ne .Site.Params.since $current -}}{{ .Site.Params.since }} - {{ end }}{{- $current -}} 
+    <span class="heart"><i class="iconfont icon-heart"></i></span><!-- --><span>{{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}{{ else }}{{ .Site.Params.author.name | safeHTML }}{{ end }}</span>
   </span>
 </div>

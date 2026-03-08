@@ -1,0 +1,13 @@
+{
+  "name": "rawlab",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "hugo --minify",
+    "dev": "hugo server -D",
+    "clean": "rm -rf public",
+    "preview": "hugo server"
+  },
+  "devDependencies": {
+    "hugo-extended": "^0.157.0"
+  }
+}
